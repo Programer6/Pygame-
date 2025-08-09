@@ -4,6 +4,7 @@ WIDTH = 1200
 HEIGHT = 720
 FPS = 60   
 TITLESIZE = 64
+SCREEN_TITLE = "2D DISTOPIA THEMED GAME"
 
 WORLD_MAP = [
 ['x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x','x'],
