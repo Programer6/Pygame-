@@ -19,8 +19,12 @@ class Level:
             for  col_index, col in enumerate(row):
                 x = col_index * TILESIZE
                 y = row_index * TILESIZE
-                if col == 'X':
-                    Tile((e, y), 
-                         [self.visible_sprites])
+                if col == 'x':
+                    Tile((x, y), 
+                         [self.visible_sprites, self.obstacle_sprites])
+                if col  == 'p':
+                    Player((x, y), 
+                      [self.visible_sprites])
     def run(self):
-        pass
+        self.visible_sprites.draw(self.display_surface)
+ 
