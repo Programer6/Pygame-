@@ -2,6 +2,7 @@ import pygame
 from settings import *
 from tile import Tile
 from player import Player
+from debug import debug_text
 
 class Level:
     def __init__(self):
@@ -27,4 +28,5 @@ class Level:
                       [self.visible_sprites])
     def run(self):
         self.visible_sprites.draw(self.display_surface)
+        self.visible_sprites.update()
  
