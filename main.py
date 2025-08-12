@@ -8,7 +8,7 @@ class Game:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         self.clock = pygame.time.Clock()
-        pygame.display.set_caption(SCREEN_TITLE)
+        pygame.display.set_caption(SCREEN_TITLE) 
         self.level = Level()
     def run(self):
         while True:
@@ -25,4 +25,5 @@ class Game:
 if __name__ == "__main__":
     game = Game()
     game.run()
-      
+          
+           
